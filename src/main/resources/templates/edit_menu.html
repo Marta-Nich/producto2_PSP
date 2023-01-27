@@ -25,13 +25,13 @@
                               method="post">
                             <div class="mb-3">
                                 <label for="menuName" class="form-label">Nombre</label>
-                                <input th:field="*{name}" type="text"
+                                <input th:field="*{menu.name}" type="text"
                                        class="form-control" id="menuName">
                             </div>
                             <div class="mb-3">
                                 <label for="menuPrice" class="form-label">Precio</label>
                                 <input type="text" class="form-control" id="menuPrice"
-                                       th:field="*{price}" pattern="^[0-9]+([.][0-9]*)?|[.][0-9]+$">
+                                       th:field="*{menu.price}" pattern="^[0-9]+([.][0-9]*)?|[.][0-9]+$">
                             </div>
                             <button type="submit" class="btn btn-primary btn-lg px-4">Guardar</button>
                         </form>
