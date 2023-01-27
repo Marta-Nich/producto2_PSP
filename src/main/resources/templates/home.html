@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://wwww.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <!-- here in nav tag used two classes
+                that is navbar and background-->
+    <!-- each class declared in nav tag will be
+         used to design the form using CSS-->
+    <nav class="navbar background">
+        <!-- we have used list tag that is ul
+             to list the items-->
+        <p><strong>&emsp;&emsp;&emsp;&emsp;¡Para casa! &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        </strong> <a href="#home">Home</a>&emsp;
+            <!--        <form action="#">-->
+            <!--        <label for="lang">Productos</label>-->
+            <!--        <select name="lenguajes" id="lang">-->
+            <!--            <option value="todos"><a href="#todo">Ver todos</a></option>-->
+            <!--            <option value="nuevos"><a href="#nuevo">Nuevo Producto</a></option></select>-->
+            <!--&lt;!&ndash;        <input type="submit" value="Enviar" />&ndash;&gt;-->
+            <!--    </form>-->
+            <a href="#producto">Productos</a>&emsp;<a href="#menus">Menus</a>&emsp;
+            <a href="#pedidos">Pedidos</a></p>
+        <!--        <ul class="nav-list">-->
+        <!--            <li>Para casa</li>-->
+        <!--            <li><a href="#home">Home</a></li>-->
+        <!--            <li><a href="#producto">Productos</a></li>-->
+        <!--            <li><a href="#menus">Menus</a></li>-->
+        <!--            <li><a href="#pedidos">Pedidos</a></li>-->
+        <!--        </ul>-->
+        <!-- we have used rightnav in order to design
+             the seachbar properly by using CSS-->
+        <!--        <div class="rightNav">-->
+        <!--            &lt;!&ndash; the value that search bar will take is text &ndash;&gt;-->
+        <!--            <input type="text" name="search" id="search" />-->
+        <!--            <button class="btn btn-sm">Search</button>-->
+        <!--        </div>-->
+    </nav>
+    <title>Comida para llevar</title>
+
+</head>
+<body>
+<table>
+
+    <tbody th:each="menu : ${menus}">
+    <tr>
+        <td><img src=""></td>
+    </tr>
+    <tr>
+        <td><span th:text="${menu.name}"></span></td>
+    </tr>
+    <tr>
+        <td><span th:text="${menu.Tipe}"></span></td>
+    </tr>
+    <tr>
+        <td><span th:text="${menu.price}"></span> <span>Ver</span></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
+<!--https://blog.hubspot.es/website/menu-desplegable-html-->
