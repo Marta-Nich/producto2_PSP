@@ -20,5 +20,6 @@ public class Producto2Application {
     void commandLineRunner(){
         Seeds seeds = new Seeds(menuRepository);
         seeds.generateSeeds();
+//         mysql -u root -p
     }
 }
