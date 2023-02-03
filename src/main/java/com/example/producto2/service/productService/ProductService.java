@@ -4,9 +4,10 @@ import com.example.producto2.model.Menu;
 import com.example.producto2.model.Producto;
 import com.example.producto2.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
-
+@Service
 public class ProductService implements IProductService{
     @Autowired
     private ProductRepository productRepository;
